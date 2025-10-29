@@ -1,0 +1,10 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+
+
+
+chat_iter = tqdm(chats) if verbose else chats
+

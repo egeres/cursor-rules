@@ -1,0 +1,6 @@
+---
+description: Should be used when you need to make changes to the API code if its using the fastAPI library
+alwaysApply: false
+---
+
+Make sure that fastAPI has an endpoint that works both for `GET` and `POST` requests called `/ping` that returns a JSON response with the message `"pong"`

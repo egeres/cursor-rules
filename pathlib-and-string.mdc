@@ -1,0 +1,16 @@
+---
+description: Use when you need to complete a method with just the definition
+alwaysApply: false
+---
+Sometimes I might define functions as this in the code:
+
+def foo(dir_stuff: Path | str):
+    ...
+
+If I tell you to complete such a method, add a:
+
+dir_stuff = Path(dir_stuff) if isinstance(dir_stuff, str) else dir_stuff
+assert isinstance(dir_stuff, Path), f"Expected Path, got {type(dir_stuff)}"
+
+The ternary if operator should handle strings, but if the user inputs something else it
+shouldnt try to turn that into a Path

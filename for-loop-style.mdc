@@ -1,0 +1,18 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+
+I usually dont really like heavily nested for loops:
+
+for i in some_iterable:
+    if condition_0(i):
+        a.append(i)
+
+I rather add a continue to skip iterations in the loop and have less levels of indentation:
+
+for i in some_iterable:
+    if condition_0(i):
+        continue
+    a.append(i)

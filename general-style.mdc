@@ -1,0 +1,19 @@
+---
+alwaysApply: true
+---
+
+Rule 0: When you write a raise ValueError, put the message in a msg variable
+
+Instead of:
+raise ValueError("Some message")
+
+You should do:
+msg = "Some message"
+raise ValueError(msg)
+
+
+
+
+
+Rule 1: Don't use List[float], use list[float] instead
+The same goes for dict

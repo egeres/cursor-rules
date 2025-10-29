@@ -1,0 +1,36 @@
+---
+description: Use when I tell you to create a plotting function, or, when you are reviewing a plotting function for changes
+alwaysApply: false
+---
+When I tell you to make a function that plots something
+
+- The function name needs to start with "plot_"
+- You need to always use plotly
+- The functions always need to return a go.Figure object
+- the variable to return needs to be called "fig"
+- Always add a fig.update_layout() that at least has template="plotly_dark"
+- Ideally you should run "uv add plotly --no-sync
+
+Here is an example of a plotting function:
+
+
+
+import plotly.graph_objects as go
+
+def plot_start_end_segments(
+    data: list[dict[str, float]],
+    start: float | None = None,
+    end: float | None = None,
+) -> go.Figure:
+    ......
+
+    fig = go.Figure( ...... )
+    fig.update_layout(
+        title="Time Segments",
+        xaxis_title="Time (seconds)",
+        yaxis_title="Segment",
+        xaxis={"range": [start, end]},
+        yaxis={"showticklabels": False},
+        showlegend=False,
+    )
+    return fig

@@ -1,0 +1,11 @@
+---
+description: Use after having created a file
+globs:
+alwaysApply: true
+---
+
+
+Don't use:
+from typing import List
+
+I'm on the latest version of python, so use list[<type>]
