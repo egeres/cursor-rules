@@ -1,9 +1,7 @@
 ---
-description:
-globs:
-alwaysApply: true
+description: Apply when writting a complex for loop
+alwaysApply: false
 ---
-
 I usually dont really like heavily nested for loops:
 
 for i in some_iterable:

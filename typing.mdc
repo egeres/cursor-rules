@@ -1,11 +1,10 @@
 ---
 description: Use after having created a file
-globs:
-alwaysApply: true
+alwaysApply: false
 ---
-
-
 Don't use:
 from typing import List
 
 I'm on the latest version of python, so use list[<type>]
+
+The same goes for dict, use dict[<type1>, <type2>]
