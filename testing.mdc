@@ -1,0 +1,11 @@
+---
+alwaysApply: true
+---
+
+Whenever I tell you "test this" what I mean is that you should write a test under the "tests" directory. I tend to group tests by module prepending them by a 
+
+test_0_
+test_1_
+test_2_
+
+that number is a subjective guide to measure the level of abstraction of the test, meaning, that test_0_ are tests meant to have no other dependencies with methods etc and be hermetic, while test_2_ are meant to test elements that depend on many other things. This is subjective and not hardcore enforced

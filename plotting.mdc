@@ -34,3 +34,6 @@ def plot_start_end_segments(
         showlegend=False,
     )
     return fig
+
+
+Ideally, plotting functions also need to be cloupled with a function that generates mock data for the plot. This function should be called "mock_data_plot_<function_name>" and be placed in the same module as the plotting function
