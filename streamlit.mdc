@@ -1,0 +1,7 @@
+---
+description: Apply when working with streamlit
+alwaysApply: false
+---
+Instead of using `use_container_width=True`, use `width='stretch'` 
+Instead of using `use_container_width=False`, use `width='content'`
+`use_container_width` will be removed after 2025-12-31.
