@@ -1,0 +1,6 @@
+---
+alwaysApply: true
+---
+
+When you define a variable meant to contain a prompt, name it somehting like: `pt_<name>`
+PT is short hand for "prompt template" (not PT, the horror game demo from kojima)

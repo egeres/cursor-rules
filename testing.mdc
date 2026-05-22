@@ -9,3 +9,21 @@ test_1_
 test_2_
 
 that number is a subjective guide to measure the level of abstraction of the test, meaning, that test_0_ are tests meant to have no other dependencies with methods etc and be hermetic, while test_2_ are meant to test elements that depend on many other things. This is subjective and not hardcore enforced
+
+whenever you write tests, try to be realtively minimal and look up the style of neighbour tests
+
+
+
+
+
+
+
+
+If I ask you to add a "fixture for a temporary dir", look up if there is a `conftest.py` file in the tests directory, and make sure inside there is a:
+
+@pytest.fixture
+def temporary_dir() -> Generator[Path, None, None]:
+    """Provides a temporary dir that is automatically cleaned up after the test"""
+
+    with TemporaryDirectory() as tmp:
+        yield Path(tmp)
